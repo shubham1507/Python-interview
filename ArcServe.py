@@ -19,3 +19,10 @@ result = max_subarray_sum(arr)
 print(f"The maximum subarray sum is: {result}")
 
 #https://chatgpt.com/share/6791ffd0-fcf0-8009-a287-082238ec4bb1
+
+
+'''
+check palindrom
+'''
+
+#https://chatgpt.com/share/67920081-0f40-8009-b78e-9b17475cd483
