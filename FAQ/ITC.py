@@ -35,3 +35,31 @@ while counter<repetation:
     num1,num2=num2,next
     next=num1+num2
 print()
+
+
+#method2
+
+"""
+Given a string "hahahjycfgeshgds". We need to find the maximum occurring character in a string. 
+If there is more than one character with a maximum occurrence then print any of them.
+
+use python list comprehension
+"""
+
+def max_occuring_char(s):
+    # Create a list of counts for each character ('a' to 'z')
+    count = [s.count(chr(i + ord('a'))) for i in range(26)]
+    
+    # Find the maximum count in the list
+    max_count = max(count)
+    
+    # Find the first index that has the maximum count
+    max_index = count.index(max_count)
+    
+    # Convert the index back to the character
+    return chr(max_index + ord('a'))
+
+# Example usage
+s = "hahahjycfgeshgds"
+result = max_occuring_char(s)
+print(f"The maximum occurring character is: {result}")
